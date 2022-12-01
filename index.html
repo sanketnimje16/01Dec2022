@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java script day 3</title>    
+        <link rel="stylesheet" href="./css/style.css">  
+        
+        <style>
+            #mybox{
+                width: 300px;
+                height: 300px;
+                background:red;
+                text-align: center;
+                color: white;
+                line-height: 300px;
+                font-weight: bold;
+                font-size: 2em;
+                text-decoration:underline;
+                font-family: Arial, Helvetica, sans-serif;
+                border-top-right-radius: 100px;
+                margin-left:20px;
+                display: inline-block;
+                
+
+            }
+            
+                
+
+        </style>
+       
+        <script>
+            /*while we have used the window.alert then the compiler stops the program while executing. 
+            when we press Ok then the remaining code will be run.*/
+            window.alert("Press OK then remaining program will be start to execution")
+            console.log("this is head tag");
+        </script>
+    </head>
+    <body>
+    <div id="mybox">FIFA22</div>
+    <div class="xbox">Xbox Card</div>
+    <div id="mybox1" style="width:300px;height:300px;background:green;">Uncharted4</div>
+    <div id="mybox4"></div>
+    <div id="mybox5"></div>
+    
+    
+
+    <script src="./js/script.js"></script>
+    <script>
+        //2nd Script before closing body tag 
+        console.log("This is body tag")
+    </script>
+    <script>
+        var sanket = 10;
+        /*first method to display the output
+        you can get unlimited script tag as you want
+        */
+        console.log(typeof sanket) 
+        //second method to display the output
+        window.alert(typeof sanket)
+    </script>
+    <script>
+        document.getElementById('mybox5').innerHTML = typeof sanket;
+        document.write('<h1>'+typeof sanket+'</h1>');
+    </script>
+
+</body>
+</html>
